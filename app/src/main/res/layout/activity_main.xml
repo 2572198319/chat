@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    <!-- 用来显示消息的列表 -->
+    <ListView android:id="@+id/wo" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/neirong"></ListView>
+    <!-- 用来输入文本的 -->
+    <EditText android:id="@+id/neirong" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/fasong" android:text="少时诵诗书" />
+    <!-- 用于发送的按钮 -->
+    <Button android:id="@+id/fasong" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  android:text="发送"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
